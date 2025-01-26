@@ -1,0 +1,8 @@
+Data Representation
+Image data -> to be turned into tensors with entries of the tensors as bit values in color channels (usually red, green, and blue)
+Text data -> to be tokenized
+Tabular data -> categorical values (high, medium, low, colors, demographic information, etc...) that need to be transformed into numbers
+
+One Hot Encoding
+Assign binary values for each numerical category
+* Adds columns, increasing the dimensions of our tensors. Bad if we need to deal with a lot of categorical features.
