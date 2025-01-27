@@ -1,0 +1,12 @@
+Error function -> a function that measures how far the current state is from the solution.
+Error: distance from the correct answer
+We repeat this step until we get close to the error function
+
+Gradient descent -> each time we take a step, we want to choose the direction to reduce the error the most
+
+Discrete vs. Continuous
+Problem with discrete: we can enter a stage where different steps approach the same result, then we won't know which direction to go and loops infinitely -> Thus error function should be differential -> introduce log-loss error function
+
+Log-loss error function: assign a large penalty to incorrectly classified points and small penalties to correctly classified points
+Total error: add all the errors from the corresponding points. 
+Then use gradient descent to solve the problem, making very tiny changes to the parameters of the line in order to decrease the total error until we have reached an acceptable minimum.
