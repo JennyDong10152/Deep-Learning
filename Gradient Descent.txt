@@ -1,0 +1,22 @@
+Gradient descent:
+
+gradient -> Takes the vector sum of partial derivatives of the error function, tells us which direction would increase the error the most
+So we want to take the negative of the gradient to decrease the error function
+
+σ′(x)=σ(x)(1−σ(x))
+
+Logistic regression:
+1. Take random model
+2. Calculate the error.
+3. Minimize the error and obtain a better model.
+
+Implementation:
+Preprocessing:
+    - Data cleanup. For example, use dummy variables to encode categorical feature (pretty much use one-hot encoding to assign categories)
+    - Standarize data: scaling the values such that they have 0 mean and a standard deviation of 1.
+        This is to avoid the gradient descent steps die off
+    - Use mean square error. With a lot of data, summing up all the weight steps can lead to really large updates -> make the gradient descent diverge -> need a small learning rate. Taking the average would solve this problem
+        Algorithm: Set the weight step to zero: Δwi=0
+                    Make a forward pass through the network, calculating the output y =f(∑wixi)
+                    Calculate the error term for the output unit, δ=(y−y^)∗f′(∑wixi)
+

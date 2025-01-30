@@ -1,0 +1,4 @@
+Maximum Likelihood ->
+    Goal: pick the model that gives the existing labels in our historical data (which we know are correct)(training set) the highest probability
+          find the model that would produce the greatest P(all), product of all independent probabilities of each datapoint. This indicates how well the model performs in classifying all datasets
+sigmoid function (σ(x)): maps any real-valued number to a range between 0 and 1
