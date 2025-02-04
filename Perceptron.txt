@@ -1,0 +1,8 @@
+Each feature has a weight
+On the left we have n inputs coming in, with values x1 to xn
+Then we have edges with weights W1 to Wn and b (for the bias). 
+The node takes these inputs and calculates a linear equation
+
+For multilayer perceptrons, we need to calculate hidden layers
+Consider this as a matrix, we're multiplying the inputs (a row vector here) by the weights. Then, the dimension of inputs and weights must match for matrix multiplication
+Take the dot (inner) product of the inputs with each column in the weights matrix.
